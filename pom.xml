@@ -68,6 +68,13 @@
 		</dependency>
 		
 		<dependency>
+		    <groupId>javax</groupId>
+		    <artifactId>javaee-web-api</artifactId>
+		    <version>7.0</version>
+		    <scope>provided</scope>
+		</dependency>
+		
+		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.6.0</version>
@@ -93,10 +100,16 @@
 			<artifactId>validation-api</artifactId>
 			<version>1.1.0.Final</version>
 		</dependency>
+		<dependency>
+		    <groupId>org.postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>9.4.1212.jre7</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
-		<finalName>projetovraptor</finalName>
+		<finalName>euclidesapi</finalName>
 		<outputDirectory>${basedir}/src/main/webapp/WEB-INF/classes</outputDirectory>
 		<plugins>
 			<plugin>
@@ -174,7 +187,7 @@
 		</plugins>
 	</build>
 
-	<artifactId>projetovraptor</artifactId>
+	<artifactId>euclidesapi</artifactId>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
